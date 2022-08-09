@@ -1,0 +1,277 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  background-color: chocolate;
+}
+
+.container {
+  width: 100%;
+  height: 200px;
+  margin: 150px auto 0;
+  background-color: rgb(110, 173, 198);
+  display: flex;
+  justify-content: flex-start;
+}
+.container .box {
+  width: 7vw;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+.container .box__image {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: skyblue;
+  border-left: 1px solid rgb(110, 173, 198);
+  border-right: 1px solid rgb(110, 173, 198);
+}
+.container .box__image .fa-brands {
+  width: 7vw;
+  font-size: 30px;
+  line-height: 200px;
+  color: white;
+}
+.container .box__text__twitter, .container .box__text__dribbble, .container .box__text__tumblr, .container .box__text__youtube, .container .box__text__instagram, .container .box__text__linkedin, .container .box__text__facebook {
+  width: 28vw;
+  height: 100%;
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: absolute;
+  top: 0;
+  left: 7vw;
+}
+.container .box__text__twitter_title, .container .box__text__dribbble_title, .container .box__text__tumblr_title, .container .box__text__youtube_title, .container .box__text__instagram_title, .container .box__text__linkedin_title, .container .box__text__facebook_title {
+  font-family: "Open Sans";
+  font-size: 38px;
+  line-height: 58px;
+}
+.container .box__text__twitter_discribe, .container .box__text__dribbble_discribe, .container .box__text__tumblr_discribe, .container .box__text__youtube_discribe, .container .box__text__instagram_discribe, .container .box__text__linkedin_discribe, .container .box__text__facebook_discribe {
+  font-family: "Arial";
+  font-size: 14px;
+  line-height: 20px;
+}
+.container .box__text__twitter::before, .container .box__text__dribbble::before, .container .box__text__tumblr::before, .container .box__text__youtube::before, .container .box__text__instagram::before, .container .box__text__linkedin::before, .container .box__text__facebook::before {
+  content: "\f099";
+  width: 7vw;
+  height: 200px;
+  font-size: 50px;
+  line-height: 200px;
+  text-align: center;
+  display: block;
+  font-family: "FontAwesome";
+  color: white;
+  background-color: rgb(29, 161, 242);
+  position: absolute;
+  left: 0;
+}
+.container .box:hover {
+  width: 35vw;
+  transition: width 0.7s;
+  cursor: pointer;
+}
+.container .box:hover .box__text__twitter::before, .container .box:hover .box__text__dribbble::before, .container .box:hover .box__text__tumblr::before, .container .box:hover .box__text__youtube::before, .container .box:hover .box__text__instagram::before, .container .box:hover .box__text__linkedin::before, .container .box:hover .box__text__facebook::before {
+  position: absolute;
+  left: -7vw;
+  transition: left 0.7s;
+}
+.container .box__text__facebook::before {
+  content: "\f082";
+  width: 7vw;
+  height: 200px;
+  font-size: 50px;
+  line-height: 200px;
+  text-align: center;
+  display: block;
+  font-family: "FontAwesome";
+  color: white;
+  background-color: rgb(66, 103, 178);
+  position: absolute;
+  left: 0;
+}
+.container .box:hover .box__text__facebook::before {
+  position: absolute;
+  left: -7vw;
+  transition: left 0.7s;
+}
+.container .box__text__linkedin::before {
+  content: "\f08c";
+  width: 7vw;
+  height: 200px;
+  font-size: 50px;
+  line-height: 200px;
+  text-align: center;
+  display: block;
+  font-family: "FontAwesome";
+  color: white;
+  background-color: rgb(0, 119, 181);
+  position: absolute;
+  left: 0;
+}
+.container .box:hover .box__text__linkedin::before {
+  position: absolute;
+  left: -7vw;
+  transition: left 0.7s;
+}
+.container .box__text__instagram::before {
+  content: "\f16d";
+  width: 7vw;
+  height: 200px;
+  font-size: 50px;
+  line-height: 200px;
+  text-align: center;
+  display: block;
+  font-family: "FontAwesome";
+  color: white;
+  background-color: rgb(252, 175, 69);
+  position: absolute;
+  left: 0;
+}
+.container .box:hover .box__text__instagram::before {
+  position: absolute;
+  left: -7vw;
+  transition: left 0.7s;
+}
+.container .box__text__youtube::before {
+  content: "\f167";
+  width: 7vw;
+  height: 200px;
+  font-size: 50px;
+  line-height: 200px;
+  text-align: center;
+  display: block;
+  font-family: "FontAwesome";
+  color: white;
+  background-color: rgb(255, 0, 0);
+  position: absolute;
+  left: 0;
+}
+.container .box:hover .box__text__youtube::before {
+  position: absolute;
+  left: -7vw;
+  transition: left 0.7s;
+}
+.container .box__text__tumblr::before {
+  content: "\f173";
+  width: 7vw;
+  height: 200px;
+  font-size: 50px;
+  line-height: 200px;
+  text-align: center;
+  display: block;
+  font-family: "FontAwesome";
+  color: white;
+  background-color: rgb(52, 82, 111);
+  position: absolute;
+  left: 0;
+}
+.container .box:hover .box__text__tumblr::before {
+  position: absolute;
+  left: -7vw;
+  transition: left 0.7s;
+}
+.container .box__text__dribbble::before {
+  content: "\f17d";
+  width: 7vw;
+  height: 200px;
+  font-size: 50px;
+  line-height: 200px;
+  text-align: center;
+  display: block;
+  font-family: "FontAwesome";
+  color: white;
+  background-color: rgb(255, 56, 121);
+  position: absolute;
+  left: 0;
+}
+.container .box:hover .box__text__dribbble::before {
+  position: absolute;
+  left: -7vw;
+  transition: left 0.7s;
+}/*# sourceMappingURL=main.css.map */

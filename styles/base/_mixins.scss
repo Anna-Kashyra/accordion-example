@@ -1,0 +1,19 @@
+@mixin text($ff, $size, $height) {
+    font-family: $ff;
+    font-size: $size;
+    line-height: $height;
+}
+
+@mixin size($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin brands($fs, $lh, $ta, $dis, $ff, $c) {
+    font-size: $fs;
+    line-height: $lh;
+    text-align: $ta;
+    display: $dis;
+    font-family: $ff;
+    color: $c;
+}
