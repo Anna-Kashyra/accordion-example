@@ -1,4 +1,4 @@
-### Hi there 👋
+## This work was done as part of the educational topic. Task: to fully reproduce the behavior of the elements in the provided video
 
 <!--
 **Anna-Kashyra/Anna-Kashyra** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
